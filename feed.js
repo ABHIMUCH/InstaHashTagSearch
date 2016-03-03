@@ -4,5 +4,6 @@ var feed = new Instafeed({
   limit: 20,
   get: 'tagged',
   tagName: tag,
+  useHttp: true
 });
 feed.run();
