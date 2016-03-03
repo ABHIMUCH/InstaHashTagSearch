@@ -1,8 +1,8 @@
-<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'ce9355ec67544c458c17eb8cc68e1a26'
-    });
-    feed.run();
-</script>
+var tag = window.prompt("Search for a HashTag","");
+var feed = new Instafeed({
+  clientId: '467ede5a6b9b48ae8e03f4e2582aeeb3',
+  limit: 20,
+  get: 'tagged',
+  tagName: tag,
+});
+feed.run();
